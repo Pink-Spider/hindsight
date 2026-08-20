@@ -1,0 +1,11 @@
+{
+  "name": "@hindsight/renderer-canvas",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "dependencies": {
+    "@hindsight/scene-spec": "workspace:*",
+    "@hindsight/templates": "workspace:*"
+  }
+}

@@ -1,0 +1,21 @@
+# 의존성 / 빌드
+node_modules/
+dist/
+.venv/
+__pycache__/
+*.pyc
+
+# 생성물 — 전부 재생성 가능
+out/
+data/*.db
+data/*.db-shm
+data/*.db-wal
+assets/bgm/*
+!assets/bgm/.gitkeep
+
+# 로컬 도구
+.idea/
+.claude/settings.local.json
+.remember/
+.playwright-mcp/
+.DS_Store

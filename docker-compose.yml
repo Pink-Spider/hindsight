@@ -1,0 +1,26 @@
+# 로컬 존 한 방 실행: docker compose up
+# - server: http://localhost:4600 (웹 스튜디오 + API). collector는 서버가 필요 시 호출.
+# - worker: 렌더 잡 큐 소비 → ./out/*.mp4
+# data(캐시 DB·잡 DB)와 out(결과물)은 호스트와 공유한다.
+services:
+  server:
+    build:
+      context: .
+      target: server
+    ports:
+      - "4600:4600"
+    volumes:
+      - ./data:/app/data
+      - ./out:/app/out
+      - ./assets:/app/assets
+
+  worker:
+    build:
+      context: .
+      target: worker
+    volumes:
+      - ./data:/app/data
+      - ./out:/app/out
+      - ./assets:/app/assets
+    depends_on:
+      - server

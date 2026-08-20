@@ -1,0 +1,18 @@
+{
+  "name": "hindsight",
+  "private": true,
+  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "render": "pnpm --filter @hindsight/worker render",
+    "studio": "pnpm --filter @hindsight/renderer-remotion studio",
+    "server": "pnpm --filter @hindsight/server dev",
+    "queue": "pnpm --filter @hindsight/worker queue",
+    "web": "pnpm --filter @hindsight/web dev"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "better-sqlite3"]
+  }
+}

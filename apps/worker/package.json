@@ -1,0 +1,20 @@
+{
+  "name": "@hindsight/worker",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "render": "tsx src/render.ts",
+    "queue": "tsx src/queue.ts"
+  },
+  "dependencies": {
+    "@hindsight/scene-spec": "workspace:*",
+    "@remotion/bundler": "^4.0.0",
+    "@remotion/renderer": "^4.0.0",
+    "better-sqlite3": "^11.7.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^26.2.0"
+  }
+}
