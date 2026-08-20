@@ -42,7 +42,6 @@ flowchart LR
 | `apps/server` | 로컬 API(:4600) — Spec 생성, 렌더 잡 큐, BGM 목록 |
 | `apps/worker` | 잡 큐 소비 → Remotion 렌더 → ffmpeg BGM 먹싱 |
 | `apps/web` | 제작 스튜디오(:5173) — 입력 폼 + 실시간 미리보기 |
-| `p0/` | matplotlib PoC — 연출 파라미터 확정용, 버릴 코드 |
 
 ## 시작하기
 
@@ -51,7 +50,7 @@ flowchart LR
 ```bash
 pnpm install
 python3 -m venv .venv
-.venv/bin/pip install finance-datareader yfinance pandas matplotlib
+.venv/bin/pip install finance-datareader yfinance pandas
 .venv/bin/python3 scripts/make-placeholder-bgm.py   # (선택) 검증용 BGM 트랙 생성
 ```
 
