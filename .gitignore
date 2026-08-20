@@ -5,7 +5,9 @@ dist/
 __pycache__/
 *.pyc
 
-# 생성물 — 전부 재생성 가능
+# 생성물 — 전부 재생성 가능. 실제 시세에서 만든 spec은 커밋 금지 (합성 픽스처만 예외)
+specs/*
+!specs/golden_synthetic.json
 out/
 data/*.db
 data/*.db-shm

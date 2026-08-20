@@ -76,7 +76,7 @@ docker compose up   # server(:4600, 웹 포함) + worker
 
 ```bash
 .venv/bin/python3 data/collector/ingest.py 005930 NVDA USD/KRW   # 시세 적재 (증분)
-pnpm render specs/nvda_spy.json                                   # Spec → mp4
+pnpm render specs/golden_synthetic.json                           # Spec → mp4 (합성 픽스처)
 pnpm studio                                                       # Remotion Studio
 ```
 
@@ -97,7 +97,7 @@ pnpm studio                                                       # Remotion Stu
 | P4 | YouTube 업로드 자동화 (OAuth 검증 통과 후) | 예정 |
 | P5 | 모바일 뷰어 앱 + 공개 뷰어 API | 선택 |
 
-설계 결정 기록(ADR)·단계별 실행 계획은 노션에 있다 — 링크는 [CLAUDE.md](CLAUDE.md) 상단 참조.
+설계 결정 기록(ADR)·단계별 실행 계획은 비공개 노션에서 관리한다.
 
 ## 주의
 

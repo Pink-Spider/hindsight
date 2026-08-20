@@ -2,10 +2,8 @@
 
 주식 수익률 변동을 애니메이션 영상으로 만들어 YouTube Shorts로 발행하는 툴.
 
-전체 설계 검토 문서: https://app.notion.com/p/3c28c64c554381788ebdc2b62380f20b
-P0 실행 계획: https://app.notion.com/p/3c28c64c554381f9b3d4fb3a71ffbf31
-ADR-001 컴포넌트 아키텍처(완성 시점): https://app.notion.com/p/3c28c64c55438164afdefdaaf640ea74
-전체 플랜 P0~P5(단계별 실행 계획의 단일 원본): https://app.notion.com/p/3c28c64c554381a09bf4e98c6bed5ad1
+설계 문서(Feasibility 검토, ADR-001/002, 전체 플랜 P0~P5)는 비공개 노션에서 관리한다.
+링크는 저장소에 적지 않는다 — 단계별 실행 계획의 단일 원본은 노션 "전체 플랜" 페이지.
 
 ## 무엇을 만드는가
 
