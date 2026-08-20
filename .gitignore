@@ -13,6 +13,12 @@ data/*.db-wal
 assets/bgm/*
 !assets/bgm/.gitkeep
 
+# 시크릿 — P4 YouTube OAuth 클라이언트/토큰은 반드시 .env로만 다룬다
+.env
+.env.*
+*credentials*.json
+*client_secret*.json
+
 # 로컬 도구
 .idea/
 .claude/settings.local.json
